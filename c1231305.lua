@@ -52,7 +52,7 @@ function s.dmop(e,tp,eg,ep,ev,re,r,rp)
 	Duel.Hint(HINT_CARD,tp,id)
 	Duel.Hint(HINT_CARD,1-tp,id)
 	Duel.BreakEffect()
-	if Duel.NegateAttack() then
-		Duel.SummonDeckMaster(tp)
+	if Duel.SummonDeckMaster(tp) then
+		Duel.NegateAttack()
 	end
 end
